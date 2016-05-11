@@ -1,2 +1,2 @@
 # Area-Under-Curve
-Calculates the Left, Right, and Trapezoid Riemann Sums
+Calculates the left and right reimann sums under a given curve f(x).
