@@ -5,6 +5,7 @@
 
 print("Use Python syntax")
 print("Ctrl-C to end script\n")
+
 def main() :
 
     global equation
