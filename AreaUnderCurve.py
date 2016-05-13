@@ -58,4 +58,8 @@ def isIncreasing(num, leftEnd, dx):
     else:
         return False
 
-main()
+try:
+    while(True):
+        main()
+except KeyboardInterrupt:
+    print("Script Ended")
