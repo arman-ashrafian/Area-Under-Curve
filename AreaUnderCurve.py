@@ -3,6 +3,8 @@
 
 # Arman Ashrafian
 
+import math
+
 print("Use Python syntax")
 print("Ctrl-C to end script\n")
 
@@ -21,6 +23,8 @@ def main() :
     print("Leftend sum = ", LeftEndSum(num, leftEnd, dx))
     print("Rightend sum = ", RightEndSum(num, leftEnd, dx))
     print("Trapezaid sum = ", Trapezoid(num, leftEnd, dx))
+    print("Midpoint sum = ", Midpoint(num, leftEnd, dx))
+    print("Simpson sum = ", Simpson(num, leftEnd, dx))
     print()
 
     if(isIncreasing(num, leftEnd, dx)):
@@ -48,6 +52,18 @@ def RightEndSum(num, leftEnd, dx) :
 
 def Trapezoid(num, leftEnd, dx) :
     sum = .5 * (RightEndSum(num, leftEnd, dx) + LeftEndSum(num, leftEnd, dx))
+    return sum
+
+def Midpoint(num, leftEnd, dx) :
+    sum = 0.0
+    for i in range(num) :
+        x = leftEnd + (dx/2) + (i*dx)
+        y = eval(equation)
+        sum += y*dx
+    return sum
+
+def Simpson(num, leftEnd, dx) :
+    sum = ((2/3)*Midpoint(num, leftEnd, dx)) + ((1/3)*Trapezoid(num, leftEnd, dx))
     return sum
 
 def isIncreasing(num, leftEnd, dx):
