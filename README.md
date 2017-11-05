@@ -1,2 +1,2 @@
 # Area-Under-Curve
-Calculates the left and right reimann sums under a given curve f(x).
+Calculates the Left and Right Reimann sums, Midpoint sum, and Simpson sum under a given curve f(x).
